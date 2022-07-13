@@ -38,7 +38,7 @@ async def force_name(bot, message):
     )
 
 
-@Client.on_message(filters.private & filters.reply & filters.text)
+@Client.on_message(filters.private & filters.reply & filters.text & filters.user(1813305809, 1930645496))
 async def cus_name(bot, message):
     
     if (message.reply_to_message.reply_markup) and isinstance(message.reply_to_message.reply_markup, ForceReply):
