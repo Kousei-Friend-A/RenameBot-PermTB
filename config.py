@@ -3,15 +3,15 @@ import os
 class Config(object):
 
     # get a token from @BotFather
-    TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "")
+    TG_BOT_TOKEN = "5435355012:AAG4TwxBNsJoPBouwNurL1xk_wvuRS8cBfc"
 
     # The Telegram API things
-    APP_ID = int(os.environ.get("APP_ID", 12345))
-    API_HASH = os.environ.get("API_HASH")
+    APP_ID = 17945796
+    API_HASH = "4a05481a5da2d66f801acffc4ca5ee4b"
     # Get these values from my.telegram.org
 
     # Array to store users who are authorized to use the bot
-    AUTH_USERS = set(int(x) for x in os.environ.get("AUTH_USERS", "").split())
+    AUTH_USERS = set(int(x) for x in os.environ.get("AUTH_USERS", "1813305809").split())
 
     # Ban Unwanted Members..
     BANNED_USERS = []
@@ -26,5 +26,5 @@ class Config(object):
     CHUNK_SIZE = 128
 
     # Database url
-    DB_URI = os.environ.get("DATABASE_URL", "")
+    DB_URI = "mongodb+srv://sakura:sakura@cluster0.futdd.mongodb.net/myFirstDatabase?retryWrites=true&w=majority"
 
